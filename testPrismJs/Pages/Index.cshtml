@@ -1,0 +1,49 @@
+﻿@page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>code</title>
+    <link rel="stylesheet" href="prism.css?@Guid.NewGuid()" type="text/css">
+</head>
+<body>
+<pre>
+<code class="language-css"> p { color: red } </code> 
+</pre>
+
+<pre class="line-numbers">
+<code class="language-js">
+function add(a, b) {
+    if (a == 0) {
+        return 132;
+    }
+    return a + b;
+}
+</code>
+</pre>
+
+<pre class="line-numbers language-diff-js">
+<code class="language-diff-js diff-highlight">function add(a, b) {
+-    if (a == 0) {
+-      return 132;
+-    }
++   // test
+    return a + b;
+}</code>
+</pre>
+
+<pre class="command-line language-bash" data-user="cash" data-host="127.0.0.1" data-filter-output="(out)">
+<code class="language-bash">pwd
+(out)/usr/home/chris/bin
+ls -la
+(out)total 2
+(out)drwxr-xr-x   2 chris  chris     11 Jan 10 16:48 .
+(out)drwxr--r-x  45 chris  chris     92 Feb 14 11:10 ..
+(out)-rwxr-xr-x   1 chris  chris    444 Aug 25  2013 backup
+(out)-rwxr-xr-x   1 chris  chris    642 Jan 17 14:42 deploy</code>
+</pre>
+
+<script src="prism.js?@Guid.NewGuid()"></script>
+</body>
+</html>
